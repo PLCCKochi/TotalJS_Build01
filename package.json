@@ -1,0 +1,26 @@
+{
+  "name": "kochilaw",
+  "version": "1.0.0",
+  "description": "[![Support](https://www.totaljs.com/img/button-support.png)](https://www.totaljs.com/support/) [![Donate](https://www.totaljs.com/img/button-donate.png)](https://www.totaljs.com/#make-a-donation)",
+  "main": "release.js",
+  "dependencies": {
+    "total.js": "^2.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PLCCKochi/TotalJS_Build01.git"
+  },
+  "keywords": [
+    "law"
+  ],
+  "author": "Wayne Enterprises Pvt Ltd",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PLCCKochi/TotalJS_Build01/issues"
+  },
+  "homepage": "https://github.com/PLCCKochi/TotalJS_Build01#readme"
+}
