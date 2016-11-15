@@ -1,0 +1,83 @@
+{
+	"hdfc":{
+		"company":"HDFC Bank Ltd",
+		"poc":"Mr. Arunkumar N",
+		"post":"Manager (Operations)",
+		"year":"2010",
+		"category":"Bank",
+		"logo":"hdfc.jpg",
+		"testimonial":"PLCC is awesome"
+	},
+	"federal":{
+		"company":"Federal Bank",
+		"poc":"",
+		"post":"",
+		"year":"2010",
+		"category":"Bank",
+		"logo":"federal.jpg",
+		"testimonial":""
+	},
+	"sunpaul":{
+		"company":"Sun Paul Properties Pvt Ltd",
+		"poc":"Mr Jigi",
+		"post":"General Manager",
+		"year":"2010",
+		"category":"Builder",
+		"logo":"sunpaul.jpg",
+		"testimonial":"PLCC is awesome."
+	},
+	"highline":{
+		"company":"Highline Developers Pvt Ltd",
+		"poc":"Mr. Radhakrishnan",
+		"post":"General Manager",
+		"year":"2010",
+		"category":"Builder",
+		"logo":"",
+		"testimonial":"PLCC is awesome"
+	},
+	"bayshore":{
+		"company":"Bayshore Properties Pvt Ltd",
+		"poc":"Mr. Rajeev",
+		"post":"Director",
+		"year":"2010",
+		"category":"Builder",
+		"logo":"",
+		"testimonial":"PLCC is awesome"
+	},
+	"seawood":{
+		"company":"Seawood Properties Pvt Ltd",
+		"poc":"",
+		"post":"",
+		"year":"2010",
+		"category":"Builder",
+		"logo":"",
+		"testimonial":""
+	},
+	"subhiksha":{
+		"company":"Subhiksha Habitat Pvt Ltd",
+		"poc":"",
+		"post":"",
+		"year":"2010",
+		"category":"Builder",
+		"logo":"",
+		"testimonial":""
+	},
+	"terra":{
+		"company":"Terra firm Properties Pvt Ltd",
+		"poc":"",
+		"post":"",
+		"year":"2010",
+		"category":"Builder",
+		"logo":"",
+		"testimonial":""
+	},
+	"kottaram":{
+		"company":"Kottaram Trading Company",
+		"poc":"Mr. Thomas",
+		"post":"Partner",
+		"year":"2010",
+		"category":"Corporate",
+		"logo":"",
+		"testimonial":"PLCC is awesome"
+	}
+}

@@ -1,0 +1,62 @@
+{
+	"name":"Kochi Law",
+	"number":"+91 484 456 7890",
+	"fax":"+91 484 456 7891",
+	"email_generic":"consult",
+	"email_grief":"report",
+	"email_tech":"admin",
+	"tagline":"welcome",
+	"address":"39/56 Curabitur quis,<br>Est sapien, Fusce nec egestas",
+	"social":{
+		"links":{
+			"fb":"PLCCKochi",
+			"tw":"PLCCKochi",
+			"li":""
+		}
+	},
+	"stats":{
+		"yoi":2004,
+		"throughput":"250-300"
+	},
+	"clients":{
+		"testmonials":[
+			"hdfc",
+			"kottaram",
+			"bayshore",
+			"highline",
+			"sunpaul"
+		],
+		"feature":[
+			"hdfc",
+			"kottaram",
+			"bayshore",
+			"highline",
+			"sunpaul"
+		]
+	},
+	"blog":{
+		"feature":[
+			"firstpost"
+		]
+	},
+	"site":{
+		"sections":{
+			"advocates":"",
+			"clients":"",
+			"testmonials":"",
+			"blog":"",
+			"services":"",
+			"contactus":""
+		}
+	},
+	"practice":[
+		"crp",
+		"ppt",
+		"ina",
+		"dda",
+		"mja"
+	],
+	"backgrounds":{
+		"mulitple-old-pages":"images/backgrounds/old-photos-lots.jpeg"
+	}
+}

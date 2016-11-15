@@ -1,7 +1,7 @@
-name                            : Total.js
-author                          : You company name
+name                            : Kochi Law
+author                          : Wayne Enterprises Pvt Ltd
 version                         : 1.0.0
-secret                          : secret-key-for-web
+secret                          : kjshkjdhfgkjshjhsdfgjdhgkjfdgkjdfhkjgbdfjgbdj
 
 // Mail settings
 mail.smtp                       : smtp.yourwebsite.com

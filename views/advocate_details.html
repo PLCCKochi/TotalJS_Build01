@@ -1,0 +1,249 @@
+  <!--BANNER START-->
+  <div id="inner-banner">
+    <div class="container">
+      <h1>@{repository.page.title}</h1>
+      <ol class="breadcrumb">
+        <li><a href="../../">Home</a></li>
+        <li><a href="../">Advocates</a></li>
+        <li class="active">@{repository.page.title}</li>
+      </ol>
+    </div>
+  </div>
+  <!--BANNER END--> 
+  
+  <!--MAIN START-->
+  <div id="main"> 
+    <!--ATTORNEYS PROFILE START-->
+    <section class="cp-attorneys-profile">
+      <div class="attorney-details">
+        <div class="container">
+          <div class="holder">
+            <div class="row">
+              <div class="col-md-4 col-sm-6">
+                <div class="cp-frame-box">
+                  <div class="frame"><img src="../../../images/advocates/@{repository.data.advocate[repository.entity].photo}" alt="img"></div>
+                </div>
+              </div>
+              <div class="col-md-8 col-sm-6">
+                <div class="cp-text-box">
+                  <h3>@{repository.page.title}</h3>
+                  <span>@{repository.data.advocate[repository.entity].title}</span>
+                  <address>
+                  <ul>
+                    <li><i class="fa fa-phone"></i>@{repository.data.advocate[repository.entity].contact.personal}</li>
+                    <li><i class="fa fa-building-o"></i>@{repository.data.advocate[repository.entity].contact.office} [@{repository.data.advocate[repository.entity].contact.office_ext}]</li>
+                    <li><i class="fa fa-envelope-o"></i><a href="mailto:@{repository.data.advocate[repository.entity].contact.email}@@{repository.data.server.host}">@{repository.data.advocate[repository.entity].contact.email}@@{repository.data.server.host}</a></li>
+                    <!--<li><i class="fa fa-skype"></i></li>
+                    <li><i class="fa fa-globe"></i><a href="#">www.lawyer.com</a></li>-->
+                  </ul>
+                  </address>
+                  <div class="attorney-details-social">
+                    <ul>
+                      <li><a href="https://twitter.com/@{repository.data.advocate[repository.entity].social.tw}"><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="https://facebook.com/@{repository.data.advocate[repository.entity].social.fb}"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="https://linkedin.com/@{repository.data.advocate[repository.entity].social.li}"><i class="fa fa-linkedin"></i></a></li>
+                      <!--<li><a href="#"><i class="fa fa-instagram"></i></a></li>-->
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cp-experience padding-btm-60">
+        <div class="container">
+          <h3>Professional Experience</h3>
+          <p>Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. <em>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec id elit non mi porta gravida at eget metus.</em> Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+        </div>
+      </div>
+      <div class="accordions-row">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="cp-accordions">
+                <h3>Practice Areas</h3>
+                <div class="accordion-style-1">
+                  <div class="cp_aaccordion-row">
+                    <div class="accordion_cp" id="section9">Drunk Driving Accidents<span><i class="fa fa-minus"></i></span> </div>
+                    <div class="contain_cp_accor">
+                      <div class="content_cp_accor">
+                        <p>Vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi id pst.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cp_aaccordion-row">
+                    <div class="accordion_cp" id="section10">Industrial Accidents<span><i class="fa fa-chevron-right"></i></span> </div>
+                    <div class="contain_cp_accor">
+                      <div class="content_cp_accor">
+                        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system. </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cp_aaccordion-row">
+                    <div class="accordion_cp" id="section11">Maritime and Jones Act Claims<span><i class="fa fa-chevron-right"></i></span> </div>
+                    <div class="contain_cp_accor">
+                      <div class="content_cp_accor">
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi. </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cp_aaccordion-row">
+                    <div class="accordion_cp" id="section12">Drunk Driving Accidents<span><i class="fa fa-chevron-right"></i></span> </div>
+                    <div class="contain_cp_accor">
+                      <div class="content_cp_accor">
+                        <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire. </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cp_aaccordion-row">
+                    <div class="accordion_cp" id="section13">Industrial Accidents<span><i class="fa fa-chevron-right"></i></span> </div>
+                    <div class="contain_cp_accor">
+                      <div class="content_cp_accor">
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock. </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cp_aaccordion-row">
+                    <div class="accordion_cp" id="section14">Maritime and Jones Act Claims<span><i class="fa fa-chevron-right"></i></span> </div>
+                    <div class="contain_cp_accor">
+                      <div class="content_cp_accor">
+                        <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reprodu. </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="cp-bar-addmissions">
+                <h3>Bar Addmissions</h3>
+                <ul>
+                  <li><a href="#">Drunk Driving Accidents</a></li>
+                  <li><a href="#">Industrial Accidents</a></li>
+                  <li><a href="#">Maritime and Jones Act Claims</a></li>
+                  <li><a href="#">Nursing Home Neglect</a></li>
+                  <li><a href="#">Products Liability</a></li>
+                  <li><a href="#">Qui Tam and Whistleblower Actions</a></li>
+                  <li><a href="#">Trucking Accidents</a></li>
+                  <li><a href="#">Vestibulum vitae libero in metus fringilla</a></li>
+                  <li><a href="#">Ut semper sem nec turpis luctus facilisis.</a></li>
+                  <li><a href="#">Integer quis elit sit amet urna ullamcorper</a></li>
+                  <li><a href="#">Integer hendrerit dui id massa maximus auctor</a></li>
+                  <li><a href="#">Nam quis lorem ac purus viverra egestas</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="education-row">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="cp-box">
+                <h3>Education &amp; Trainings</h3>
+                <ul>
+                  <li> <strong class="year">1999</strong>
+                    <div class="cp-text-box">
+                      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam.</p>
+                    </div>
+                  </li>
+                  <li> <strong class="year">2004</strong>
+                    <div class="cp-text-box">
+                      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
+                    </div>
+                  </li>
+                  <li> <strong class="year">2012</strong>
+                    <div class="cp-text-box">
+                      <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="cp-box">
+                <h3>Honors &amp; Awards</h3>
+                <div class="honors-box">
+                  <div class="icon-box"><i class="fa fa-trophy"></i></div>
+                  <div class="cp-text-box"> <strong class="title"><a href="#">Products Liability</a></strong>
+                    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.</p>
+                  </div>
+                </div>
+                <div class="honors-box">
+                  <div class="icon-box"><i class="fa fa-thumbs-o-up"></i></div>
+                  <div class="cp-text-box"> <strong class="title"><a href="#">Maritime and Jones Act Claims</a></strong>
+                    <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="cp-box">
+                <h3>Best Skills</h3>
+                <div class="cp-progress-box"> <strong class="title"><i class="fa fa-caret-right"></i>Corporate Law</strong>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"> 70% </div>
+                  </div>
+                </div>
+                <div class="cp-progress-box"> <strong class="title"><i class="fa fa-caret-right"></i>Industrial Accidents</strong>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"> 85% </div>
+                  </div>
+                </div>
+                <div class="cp-progress-box"> <strong class="title"><i class="fa fa-caret-right"></i>Employment Rights</strong>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"> 90% </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cp-clients-row cp-client-section">
+        <div class="container">
+          <h3>@{repository.data.advocate[repository.entity].shortname}’s Clients</h3>
+          <ul>
+            @{foreach client in repository.data.advocate[repository.entity].clients}
+              <li>
+                <a href="../../../clients/@{client}">
+                  <img alt="img" src="../../../images/clients/@{repository.data.client[client].logo}">
+                </a>
+              </li>
+            @{end}
+          </ul>
+        </div>
+      </div>
+      <div class="contact-form-area">
+        <div class="cp-author-box">
+          <div class=" container">
+            <h2>Contact with @{repository.data.advocate[repository.entity].shortname}</h2>
+            <form action="form-2.php" method="post">
+              <div class="row">
+                <div class="col-md-4">
+                  <input type="text" name="name" placeholder="First Name *" required pattern="[a-zA-Z ]+">
+                </div>
+                <div class="col-md-4">
+                  <input type="text" name="name" placeholder="Last Name *" required pattern="[a-zA-Z ]+">
+                </div>
+                <div class="col-md-4">
+                  <input type="text" name="phone" placeholder="Your Phone *" required pattern="(\+?\d[- .]*){7,13}">
+                </div>
+                <div class="col-md-12">
+                  <textarea required name="comments" placeholder="Comment *" rows="10" cols="10"></textarea>
+                </div>
+                <div class="col-md-12">
+                  <input type="submit" value="Submit Message">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--ATTORNEYS PROFILE END--> 
+  </div>
+  <!--MAIN END--> 

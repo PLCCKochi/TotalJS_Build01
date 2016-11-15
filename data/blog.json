@@ -1,0 +1,26 @@
+{
+	"firstpost":{
+		"title":"First Post",
+		"post":"firstpost.md",
+		"author":"",
+		"date":""
+	},
+	"welcome":{
+		"title":"",
+		"post":"intro.md",
+		"author":"",
+		"date":""
+	},
+	"hello":{
+		"title":"Hello",
+		"post":"",
+		"author":"",
+		"date":""
+	},
+	"nitro":{
+		"title":"Nitro",
+		"post":"",
+		"author":"",
+		"date":""
+	}
+}

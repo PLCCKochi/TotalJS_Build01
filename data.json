@@ -1,0 +1,345 @@
+{
+    "server": {
+        "port": "5000",
+        "prot": "https://",
+        "host": "kochilaw.tk",
+        "developer": {
+            "name": "Wayne Enterprises Pvt Ltd",
+            "url": "https://wayne.co.in"
+        }
+    },
+    "tweets": [
+        "This is awesome af",
+        "This is rad af",
+        "Nice, check this out. https://athulraj.com/gkil/jk now !"
+    ],
+    "sitemap": {
+        "Home": "/../../../",
+        "Advocates": "/../../../advocates",
+        "Services": "/../../../services",
+        "Clients": "/../../../clients",
+        "Testimonials": "/../../../clients/testimonials",
+        "Contact Us": "/../../../contactus",
+        "Consultation": "/../../../consult"
+    },
+    "client": {
+        "hdfc": {
+            "company": "HDFC Bank Ltd",
+            "poc": "Mr. Arunkumar N",
+            "post": "Manager (Operations)",
+            "year": "2010",
+            "category": "Bank",
+            "logo": "hdfc.jpg",
+            "testimonial": "PLCC is awesome"
+        },
+        "federal": {
+            "company": "Federal Bank",
+            "poc": "",
+            "post": "",
+            "year": "2010",
+            "category": "Bank",
+            "logo": "federal.jpg",
+            "testimonial": ""
+        },
+        "sunpaul": {
+            "company": "Sun Paul Properties Pvt Ltd",
+            "poc": "Mr Jigi",
+            "post": "General Manager",
+            "year": "2010",
+            "category": "Builder",
+            "logo": "sunpaul.jpg",
+            "testimonial": "PLCC is awesome."
+        },
+        "highline": {
+            "company": "Highline Developers Pvt Ltd",
+            "poc": "Mr. Radhakrishnan",
+            "post": "General Manager",
+            "year": "2010",
+            "category": "Builder",
+            "logo": "",
+            "testimonial": "PLCC is awesome"
+        },
+        "bayshore": {
+            "company": "Bayshore Properties Pvt Ltd",
+            "poc": "Mr. Rajeev",
+            "post": "Director",
+            "year": "2010",
+            "category": "Builder",
+            "logo": "",
+            "testimonial": "PLCC is awesome"
+        },
+        "seawood": {
+            "company": "Seawood Properties Pvt Ltd",
+            "poc": "",
+            "post": "",
+            "year": "2010",
+            "category": "Builder",
+            "logo": "",
+            "testimonial": ""
+        },
+        "subhiksha": {
+            "company": "Subhiksha Habitat Pvt Ltd",
+            "poc": "",
+            "post": "",
+            "year": "2010",
+            "category": "Builder",
+            "logo": "",
+            "testimonial": ""
+        },
+        "terra": {
+            "company": "Terra firm Properties Pvt Ltd",
+            "poc": "",
+            "post": "",
+            "year": "2010",
+            "category": "Builder",
+            "logo": "",
+            "testimonial": ""
+        },
+        "kottaram": {
+            "company": "Kottaram Trading Company",
+            "poc": "Mr. Thomas",
+            "post": "Partner",
+            "year": "2010",
+            "category": "Corporate",
+            "logo": "",
+            "testimonial": "PLCC is awesome"
+        }
+    },
+    "blog": {
+        "firstpost": {
+            "title": "First Post",
+            "post": "firstpost.md",
+            "author": "",
+            "date": ""
+        },
+        "welcome": {
+            "title": "",
+            "post": "intro.md",
+            "author": "",
+            "date": ""
+        },
+        "hello": {
+            "title": "Hello",
+            "post": "",
+            "author": "",
+            "date": ""
+        },
+        "nitro": {
+            "title": "Nitro",
+            "post": "",
+            "author": "",
+            "date": ""
+        }
+    },
+    "service": {
+        "document-collection": {
+            "description": "Documents collecting from client site "
+        },
+        "document-scrutiny": {
+            "description": "Scrutiny of documents for determining whether the title is good and alienable."
+        },
+        "draft-prepration": {
+            "description": "Preparation of Draft Agreement for sale /sale deed /and or any type deeds as required to the client satisfaction (Malayalam and English)."
+        },
+        "original-deed-prepration": {
+            "description": "Preparation off Original Deeds (Malayalam and English)."
+        },
+        "document-certificate-application-and-procurement": {
+            "description": "Applying/updating documents like, property tax, land tax, encumbrance certificate"
+        },
+        "document-registration": {
+            "description": "Registration of documents at the respective Sub Registry offices (We have a good network and we are capable of doing registrations all across Kerala."
+        },
+        "ownership-title change": {
+            "description": "Change in ownership/Title of the property registered and Handing over the title deed after completing all statutory requirements."
+        }
+    },
+    "company": {
+        "name": "Kochi Law",
+        "number": "+91 484 456 7890",
+        "fax": "+91 484 456 7891",
+        "email_generic": "consult",
+        "email_grief": "report",
+        "email_tech": "admin",
+        "tagline": "welcome",
+        "address": "39/56 Curabitur quis,<br>Est sapien, Fusce nec egestas",
+        "social": {
+            "links": {
+                "fb": "PLCCKochi",
+                "tw": "PLCCKochi",
+                "li": ""
+            }
+        },
+        "stats": {
+            "yoi": 2004,
+            "throughput": "250-300"
+        },
+        "clients": {
+            "testmonials": [
+                "hdfc",
+                "kottaram",
+                "bayshore",
+                "highline",
+                "sunpaul"
+            ],
+            "feature": [
+                "hdfc",
+                "kottaram",
+                "bayshore",
+                "highline",
+                "sunpaul"
+            ]
+        },
+        "blog": {
+            "feature": [
+                "firstpost"
+            ]
+        },
+        "site": {
+            "sections": {
+                "advocates": "",
+                "clients": "",
+                "testmonials": "",
+                "blog": "",
+                "services": "",
+                "contactus": ""
+            }
+        },
+        "practice": [
+            "crp",
+            "ppt",
+            "ina",
+            "dda",
+            "mja"
+        ],
+        "backgrounds": {
+            "mulitple-old-pages": "images/backgrounds/old-photos-lots.jpeg"
+        }
+    },
+    "practice": {
+        "areas": {
+            "dda": {
+                "icon": "car",
+                "title": "Drunk Driving Accidents",
+                "decal": "Vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi id pst."
+            },
+            "ina": {
+                "icon": "industry",
+                "title": "Industrial Accidents",
+                "decal": "In hac habitasse platea dictumst. Fusce mi sapien, venenatis vitae diam commodo, ultrices commodo augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas massa velit, pulvinar et eleifend nec, aliquet eget odio. Vivamus non finibus justo, suscipit laoreet sem. Cras cursus nisi tellus, in laoreet justo suscipit posuere. Morbi laoreet semper tortor at placerat. Donec quis urna eu turpis pellentesque hendrerit. Aenean porta posuere consequat."
+            },
+            "mja": {
+                "icon": "ship",
+                "title": "Maritime and Jones Act Claims",
+                "decal": "Nunc imperdiet auctor felis a porta. Donec sapien massa, mattis molestie quam quis, tincidunt venenatis leo. Curabitur sollicitudin a metus non finibus. Suspendisse felis odio, venenatis a nulla ac, vestibulum feugiat urna. Aenean iaculis id leo in finibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc euismod egestas elit, ac ultrices tellus congue sed. Sed condimentum in mauris in fringilla. Ut interdum tincidunt libero, non commodo diam consectetur ut. Etiam vel congue lectus, nec faucibus ante. Cras libero felis, tristique non ante nec, finibus dictum lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus viverra sed justo sed luctus."
+            },
+            "crp": {
+                "icon": "building-o",
+                "title": "Corporate",
+                "decal": "Vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi id pst."
+            },
+            "ppt": {
+                "icon": "home",
+                "title": "Property Law",
+                "decal": "In hac habitasse platea dictumst. Fusce mi sapien, venenatis vitae diam commodo, ultrices commodo augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas massa velit, pulvinar et eleifend nec, aliquet eget odio. Vivamus non finibus justo, suscipit laoreet sem. Cras cursus nisi tellus, in laoreet justo suscipit posuere. Morbi laoreet semper tortor at placerat. Donec quis urna eu turpis pellentesque hendrerit. Aenean porta posuere consequat."
+            },
+            "fsl": {
+                "icon": "money",
+                "title": "Finance & Security Law",
+                "decal": "Nunc imperdiet auctor felis a porta. Donec sapien massa, mattis molestie quam quis, tincidunt venenatis leo. Curabitur sollicitudin a metus non finibus. Suspendisse felis odio, venenatis a nulla ac, vestibulum feugiat urna. Aenean iaculis id leo in finibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc euismod egestas elit, ac ultrices tellus congue sed. Sed condimentum in mauris in fringilla. Ut interdum tincidunt libero, non commodo diam consectetur ut. Etiam vel congue lectus, nec faucibus ante. Cras libero felis, tristique non ante nec, finibus dictum lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus viverra sed justo sed luctus."
+            }
+        },
+        "admissions": {
+            "dda": "Drunk Driving Accidents",
+            "ina": "Industrial Accidents",
+            "mja": "Maritime and Jones Act Claims",
+            "nhn": "Nursing Home Neglect",
+            "pdl": "Products Liability",
+            "qwa": "Qui Tam and Whistleblower Actions",
+            "tra": "Trucking Accidents"
+        }
+    },
+    "advocate": {
+        "reggie": {
+            "name": "Reggie George",
+            "shortname": "Reggie",
+            "title": "Senior Lawyer",
+            "photo": "reggie.jpg",
+            "department": "Corporate",
+            "caption": "vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.",
+            "social": {
+                "fb": "reggieGeorge",
+                "li": "reggieGeorge",
+                "tw": "reggieGeorge156"
+            },
+            "contact": {
+                "personal": "+91 9633 495163",
+                "office": "+91 484 32648",
+                "office_ext": "36",
+                "skype": "hireggieGeorge",
+                "email": "reggie",
+                "website": ""
+            },
+            "practice": {
+                "areas": [
+                    "ina",
+                    "dda"
+                ],
+                "addmissions": [
+                    "dda",
+                    "ina",
+                    "mja"
+                ]
+            },
+            "education": [
+                {
+                    "univ": "",
+                    "year": "",
+                    "remark": ""
+                }
+            ],
+            "clients": [
+                "hdfc",
+                "federal"
+            ]
+        },
+        "natraj": {
+            "name": "Natraj",
+            "title": "Lawyer",
+            "photo": "natraj.jpeg",
+            "department": "",
+            "caption": "vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.",
+            "social": {
+                "fb": "http://facebook.com/natrajKK",
+                "li": "",
+                "tw": ""
+            },
+            "contact": {
+                "personal": "",
+                "office": "",
+                "office_ext": "",
+                "skype": "",
+                "email": "",
+                "website": ""
+            },
+            "practice": {
+                "areas": [
+                    "ina",
+                    "dda"
+                ],
+                "addmissions": [
+                    "dda",
+                    "ina",
+                    "mja"
+                ]
+            },
+            "education": [
+                {
+                    "univ": "",
+                    "year": "",
+                    "remark": ""
+                }
+            ]
+        }
+    }
+}

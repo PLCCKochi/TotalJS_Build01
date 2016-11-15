@@ -1,0 +1,83 @@
+{
+	"reggie":{
+		"name":"Reggie George",
+		"shortname":"Reggie",
+		"title":"Senior Lawyer",
+		"photo":"reggie.jpg",
+		"department":"Corporate",
+		"caption":"vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.",
+		"social":{
+			"fb":"reggieGeorge",
+			"li":"reggieGeorge",
+			"tw":"reggieGeorge156"
+		},
+		"contact":{
+			"personal":"+91 9633 495163",
+			"office":"+91 484 32648",
+			"office_ext":"36",
+			"skype":"hireggieGeorge",
+			"email":"reggie",
+			"website":""
+		},
+		"practice":{
+			"areas":[
+				"ina",
+				"dda"
+			],
+			"addmissions":[
+				"dda",
+				"ina",
+				"mja"
+			]
+		},
+		"education":[
+			{
+				"univ":"",
+				"year":"",
+				"remark":""
+			}
+		],
+		"clients":[
+			"hdfc",
+			"federal"
+		]
+	},
+	"natraj":{
+		"name":"Natraj",
+		"title":"Lawyer",
+		"photo":"natraj.jpeg",
+		"department":"",
+		"caption":"vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.",
+		"social":{
+			"fb":"http://facebook.com/natrajKK",
+			"li":"",
+			"tw":""
+		},
+		"contact":{
+			"personal":"",
+			"office":"",
+			"office_ext":"",
+			"skype":"",
+			"email":"",
+			"website":""
+		},
+		"practice":{
+			"areas":[
+				"ina",
+				"dda"
+			],
+			"addmissions":[
+				"dda",
+				"ina",
+				"mja"
+			]
+		},
+		"education":[
+			{
+				"univ":"",
+				"year":"",
+				"remark":""
+			}
+		]
+	}
+}
