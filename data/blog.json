@@ -1,26 +1,30 @@
 {
-	"firstpost":{
+	"welcome":{
 		"title":"First Post",
 		"post":"firstpost.md",
-		"author":"",
-		"date":""
+		"image":"investment.jpg",
+		"author":"reggie",
+		"date":"20/08/2004"
 	},
-	"welcome":{
-		"title":"",
-		"post":"intro.md",
-		"author":"",
-		"date":""
+	"firstpost":{
+		"title":"What is IPL ?",
+		"post":"dummy1.md",
+		"image":"wiegh.jpg",
+		"author":"reggie",
+		"date":"10/04/2010"
 	},
 	"hello":{
 		"title":"Hello",
-		"post":"",
-		"author":"",
-		"date":""
+		"post":"dummy2.md",
+		"image":"cover.jpg",
+		"author":"reggie",
+		"date":"16/11/2011"
 	},
-	"nitro":{
-		"title":"Nitro",
-		"post":"",
-		"author":"",
-		"date":""
+	"thisisit":{
+		"title":"This is IT !",
+		"post":"dummy3.md",
+		"image":"lawlate.jpg",
+		"author":"reggie",
+		"date":"16/11/2015"
 	}
 }

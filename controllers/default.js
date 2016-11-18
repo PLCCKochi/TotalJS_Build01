@@ -1,12 +1,8 @@
 var fs = require('fs');
+var showdown  = require('showdown'),
+	converter = new showdown.Converter();
 
 var data = require('../data.json');
-
-var featurePost = data.company.blog.feature[0]
-var featureText = fs.readFileSync("./blog/" + data.blog[featurePost].post,'utf8').substr(0,160)+"...";
-data.blog.feature={};
-data.blog.feature.link = featurePost;
-data.blog.feature.text = featureText;
 
 exports.install = function() {
 	F.route('/', view_index);
@@ -76,8 +72,9 @@ function view_advocate_details (advocate){
 	self.repository.data = data;
 	self.repository.page={};
 	self.repository.page.title = data.advocate[advocate].name;
+	self.model.
 	self.repository.entity = advocate;
-	this.view('advocate_details');
+	this.view('advocate_details',data.advocate[advocate]);
 }
 function view_service_details (service){
 	var self = this;

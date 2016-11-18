@@ -5,7 +5,8 @@
 		"title":"Senior Lawyer",
 		"photo":"reggie.jpg",
 		"department":"Corporate",
-		"caption":"vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.",
+		"proexp":"reggie.md",
+		"caption":"An energenitic man who believes in the art of war.",
 		"social":{
 			"fb":"reggieGeorge",
 			"li":"reggieGeorge",
@@ -32,33 +33,47 @@
 		},
 		"education":[
 			{
-				"univ":"",
-				"year":"",
-				"remark":""
+				"univ":"Some Univ",
+				"year":"1987",
+				"remark":"Grad with Honors"
 			}
 		],
+		"awards":[
+			{
+				"icon":"trophy",
+				"name":"Kerala Lawyer's Meet 2012",
+				"remark":"Best Corporate Lawyer"
+			}
+		],
+		"skills":{
+			"dda":90,
+			"ina":80,
+			"mja":75
+		},
 		"clients":[
 			"hdfc",
 			"federal"
 		]
 	},
 	"natraj":{
-		"name":"Natraj",
-		"title":"Lawyer",
-		"photo":"natraj.jpeg",
-		"department":"",
-		"caption":"vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.",
+		"name":"Natraj K",
+		"shortname":"Natraj",
+		"title":"Family Lawyer",
+		"photo":"natraj.jpg",
+		"department":"Family",
+		"proexp":"natraj.md",
+		"caption":"An humble human, be thinks people are born to find their soul mates.",
 		"social":{
-			"fb":"http://facebook.com/natrajKK",
-			"li":"",
-			"tw":""
+			"fb":"natraj",
+			"li":"natraj82240",
+			"tw":"nattu"
 		},
 		"contact":{
-			"personal":"",
-			"office":"",
-			"office_ext":"",
-			"skype":"",
-			"email":"",
+			"personal":"+91 9681 879127",
+			"office":"+91 484 32648",
+			"office_ext":"42",
+			"skype":"hellonatraj",
+			"email":"natraj",
 			"website":""
 		},
 		"practice":{
@@ -78,6 +93,10 @@
 				"year":"",
 				"remark":""
 			}
+		],
+		"clients":[
+			"federal",
+			"sunpaul"
 		]
 	}
 }

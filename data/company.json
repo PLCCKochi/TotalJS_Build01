@@ -28,16 +28,14 @@
 		],
 		"feature":[
 			"hdfc",
-			"kottaram",
+			"federal",
 			"bayshore",
 			"highline",
 			"sunpaul"
 		]
 	},
 	"blog":{
-		"feature":[
-			"firstpost"
-		]
+		"feature":"firstpost"
 	},
 	"site":{
 		"sections":{

@@ -24,9 +24,13 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4 col-sm-4">
-            <div class="cp-box"> <strong class="footer-logo"><a href="../../"><img src="images/footer-logo.png" alt="img"></a></strong>
-              <p>@{repository.data.blog.feature.text}</p>
-              <a href="../../../blog/@{repository.data.blog.feature.link}" class="btn-style-1">Read More</a> </div>
+            <div class="cp-box"> <strong class="footer-logo"><a href="../../"><img src="../../../images/footer-logo.png" alt="img"></a></strong>
+              @{foreach post in repository.data.blog}
+                @{if post.key === repository.data.company.blog.feature}
+                  <p>@{!repository.data.blog[post.key].postExcerptMDd}...</p>
+                  <a href="../../../blog/@{post.key}" class="btn-style-1">Read More</a> </div>
+                @{fi}
+              @{end}
           </div>
           <div class="col-md-4 col-sm-4">
             <div class="cp-box">

@@ -5,7 +5,7 @@
 		"post":"Manager (Operations)",
 		"year":"2010",
 		"category":"Bank",
-		"logo":"hdfc.jpg",
+		"logo":"hdfc.png",
 		"testimonial":"PLCC is awesome"
 	},
 	"federal":{
@@ -14,8 +14,8 @@
 		"post":"",
 		"year":"2010",
 		"category":"Bank",
-		"logo":"federal.jpg",
-		"testimonial":""
+		"logo":"federal.png",
+		"testimonial":"PLCC is fast"
 	},
 	"sunpaul":{
 		"company":"Sun Paul Properties Pvt Ltd",
@@ -32,7 +32,7 @@
 		"post":"General Manager",
 		"year":"2010",
 		"category":"Builder",
-		"logo":"",
+		"logo":"highline.jpg",
 		"testimonial":"PLCC is awesome"
 	},
 	"bayshore":{
@@ -41,7 +41,7 @@
 		"post":"Director",
 		"year":"2010",
 		"category":"Builder",
-		"logo":"",
+		"logo":"bayshore.png",
 		"testimonial":"PLCC is awesome"
 	},
 	"seawood":{
@@ -50,7 +50,7 @@
 		"post":"",
 		"year":"2010",
 		"category":"Builder",
-		"logo":"",
+		"logo":"seawood.jpg",
 		"testimonial":""
 	},
 	"subhiksha":{
