@@ -5144,3 +5144,9 @@ code {
     height:100%;
   	overflow: hidden;
 }
+
+.smallp{
+	height: 75px;
+	width: 230px;
+	object-fit: cover;
+}

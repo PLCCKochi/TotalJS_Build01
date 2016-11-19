@@ -19,8 +19,8 @@
         "Services": "/../../../services",
         "Clients": "/../../../clients",
         "Testimonials": "/../../../clients/testimonials",
-        "Contact Us": "/../../../contactus",
-        "Consultation": "/../../../consult"
+        "Blog": "/../../../blog",
+        "Contact Us": "/../../../contactus"
     },
     "client": {
         "hdfc": {
@@ -74,7 +74,7 @@
             "post": "",
             "year": "2010",
             "category": "Builder",
-            "logo": "seawood.jpg",
+            "logo": "seawood.png",
             "testimonial": ""
         },
         "subhiksha": {
@@ -161,25 +161,32 @@
     },
     "service": {
         "document-collection": {
-            "description": "Documents collecting from client site "
+            "description": "Documents collecting from client site ",
+            "info": "service1.md"
         },
         "document-scrutiny": {
-            "description": "Scrutiny of documents for determining whether the title is good and alienable."
+            "description": "Scrutiny of documents for determining whether the title is good and alienable.",
+            "info": "service2.md"
         },
         "draft-prepration": {
-            "description": "Preparation of Draft Agreement for sale /sale deed /and or any type deeds as required to the client satisfaction (Malayalam and English)."
+            "description": "Preparation of Draft Agreement for sale /sale deed /and or any type deeds as required to the client satisfaction (Malayalam and English).",
+            "info": "service3.md"
         },
         "original-deed-prepration": {
-            "description": "Preparation off Original Deeds (Malayalam and English)."
+            "description": "Preparation off Original Deeds (Malayalam and English).",
+            "info": "service4.md"
         },
         "document-certificate-application-and-procurement": {
-            "description": "Applying/updating documents like, property tax, land tax, encumbrance certificate"
+            "description": "Applying/updating documents like, property tax, land tax, encumbrance certificate",
+            "info": "service5.md"
         },
         "document-registration": {
-            "description": "Registration of documents at the respective Sub Registry offices (We have a good network and we are capable of doing registrations all across Kerala."
+            "description": "Registration of documents at the respective Sub Registry offices (We have a good network and we are capable of doing registrations all across Kerala.",
+            "info": "service6.md"
         },
         "ownership-title change": {
-            "description": "Change in ownership/Title of the property registered and Handing over the title deed after completing all statutory requirements."
+            "description": "Change in ownership/Title of the property registered and Handing over the title deed after completing all statutory requirements.",
+            "info": "service7.md"
         }
     },
     "company": {
@@ -195,7 +202,7 @@
             "links": {
                 "fb": "PLCCKochi",
                 "tw": "PLCCKochi",
-                "li": ""
+                "li": "PLCCKochi"
             }
         },
         "stats": {
@@ -310,26 +317,42 @@
             "practice": {
                 "areas": [
                     "ina",
-                    "dda"
+                    "dda",
+                    "mja",
+                    "fsl",
+                    "ppt",
+                    "crp"
                 ],
-                "addmissions": [
+                "admissions": [
                     "dda",
                     "ina",
-                    "mja"
+                    "mja",
+                    "nhn",
+                    "qwa"
                 ]
             },
             "education": [
                 {
-                    "univ": "Some Univ",
+                    "univ": "Mahathma Gandhi Univ",
                     "year": "1987",
                     "remark": "Grad with Honors"
+                },
+                {
+                    "univ": "Cochin University",
+                    "year": "1990",
+                    "remark": "Masters with Honors"
                 }
             ],
             "awards": [
                 {
                     "icon": "trophy",
-                    "name": "Kerala Lawyer's Meet 2012",
-                    "remark": "Best Corporate Lawyer"
+                    "name": "Best Corporate Lawyer",
+                    "remark": "Kerala Lawyer's Meet 2012"
+                },
+                {
+                    "icon": "shield",
+                    "name": "Best Corporate Lawyer",
+                    "remark": "Kerala Lawyer's Meet 2014"
                 }
             ],
             "skills": {
@@ -339,7 +362,8 @@
             },
             "clients": [
                 "hdfc",
-                "federal"
+                "federal",
+                "sunpaul"
             ],
             "proexpContent": "<p>Fusce fringilla tellus at porta congue. Nullam finibus maximus lorem. Ut est enim, aliquet ut sapien ornare, rutrum laoreet est. Quisque ullamcorper sit amet enim ac dictum. Pellentesque eu ante euismod, consequat nunc laoreet, iaculis elit. Aenean sit amet turpis commodo, sagittis nibh at, commodo nibh. Ut venenatis dictum metus ut fermentum. Nullam nec dolor aliquam nisl auctor congue. Nulla convallis quis sem luctus efficitur. Aliquam erat volutpat. Aliquam et odio eget libero ultricies tincidunt in in velit. In dictum tellus semper, posuere justo non, interdum est. Suspendisse dapibus lectus vitae nunc accumsan fringilla. Nulla non felis leo. Praesent molestie efficitur vehicula.</p>\n<p>Integer venenatis id elit gravida pharetra. Fusce faucibus felis sed justo mattis ultrices. Nulla facilisi. Nunc maximus lacus id arcu laoreet, sed dictum risus euismod. Integer at justo malesuada, iaculis diam a, interdum magna. Aliquam erat volutpat. Sed pulvinar ligula nec est egestas congue. Mauris eu velit massa.</p>"
         },
@@ -367,26 +391,75 @@
             "practice": {
                 "areas": [
                     "ina",
-                    "dda"
+                    "dda",
+                    "mja",
+                    "fsl",
+                    "ppt",
+                    "crp"
                 ],
-                "addmissions": [
+                "admissions": [
                     "dda",
                     "ina",
-                    "mja"
+                    "mja",
+                    "nhn",
+                    "qwa"
                 ]
             },
             "education": [
                 {
-                    "univ": "",
-                    "year": "",
-                    "remark": ""
+                    "univ": "Mahathma Gandhi Univ",
+                    "year": "1987",
+                    "remark": "Grad with Honors"
+                },
+                {
+                    "univ": "Cochin University",
+                    "year": "1990",
+                    "remark": "Masters with Honors"
                 }
             ],
+            "awards": [
+                {
+                    "icon": "trophy",
+                    "name": "Best Corporate Lawyer",
+                    "remark": "Kerala Lawyer's Meet 2012"
+                },
+                {
+                    "icon": "shield",
+                    "name": "Best Corporate Lawyer",
+                    "remark": "Kerala Lawyer's Meet 2014"
+                }
+            ],
+            "skills": {
+                "dda": 60,
+                "ina": 40,
+                "mja": 35
+            },
             "clients": [
-                "federal",
-                "sunpaul"
+                "sunpaul",
+                "highline",
+                "bayshore",
+                "seawood"
             ],
             "proexpContent": "<p><strong>Fusce tempus sollicitudin tortor</strong>, non feugiat libero efficitur eget. Donec ornare fringilla molestie. Ut a blandit neque. In non consectetur erat. Mauris dignissim id odio a lobortis. Fusce sit amet viverra ipsum. Nam mollis vel nibh non dapibus. Praesent vitae augue neque. Pellentesque consequat risus et ipsum ultricies, in dictum tellus finibus. Nulla facilisi. Pellentesque hendrerit, magna dapibus laoreet placerat, velit leo scelerisque enim, ut tristique mauris justo non tortor. Phasellus blandit diam et ligula fermentum, nec imperdiet sapien condimentum. Cras eleifend est ex, eu volutpat lorem condimentum sit amet. In justo enim, cursus viverra nunc vel, ultricies vehicula ligula. Sed ultricies quis tellus ut dapibus.</p>"
         }
+    },
+    "home": {
+        "banner": [
+            {
+                "text1": "Pothuval Legal and Corporate Consulting",
+                "text2": "Zero Error Document Services",
+                "image": "sign.jpg",
+                "buttons": [
+                    {
+                        "title": "Learn More",
+                        "link": "services/document"
+                    },
+                    {
+                        "title": "Contact Us",
+                        "link": "contactus"
+                    }
+                ]
+            }
+        ]
     }
 }

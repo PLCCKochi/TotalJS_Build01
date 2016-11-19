@@ -1,0 +1,19 @@
+{
+	"banner":[
+		{
+			"text1":"Pothuval Legal and Corporate Consulting",
+			"text2":"Zero Error Document Services",
+			"image":"sign.jpg",
+			"buttons":[
+				{
+					"title":"Learn More",
+					"link":"services/document"
+				},
+				{
+					"title":"Contact Us",
+					"link":"contactus"
+				}
+			]
+		}
+	]
+}

@@ -62,10 +62,18 @@
 <script src="../../../js/jquery.prettyPhoto.js"></script> 
 <!--Accordion JS-->
 <script src="../../../js/jquery.accordion.js"></script> 
+<!--JQUERY END-->
 <!--AutoLinker JS-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autolinker/1.2.0/Autolinker.min.js"></script>
 <!--CUSTOM SCRIPT--> 
-<script src="../../../js/custom.js"></script>
-<!--JQUERY END-->
+<script src="../../../js/custom.min.js"></script>
+<!--GMaps JS-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_ZbqiSmqgurKxsBpxm67ZGGTqZ56ahvA&callback=initMap"
+    async defer></script>
+<script type="text/javascript">
+	function opennewsearch(){
+    window.open('https://www.google.com/search?q=' + document.getElementById('searchtext').value + ' site:@{repository.data.server.host}', '_blank');
+}
+</script>
 </body>
 </html>

@@ -15,6 +15,8 @@ exports.install = function() {
 	F.route('/clients',view_client_index);
 	F.route('/clients/{client}',view_client_details);
 	F.route('/clients/testimonials',view_testimonial_index);
+	F.route('/consult',view_consult);
+	F.route('/contactus',view_contactus);
 };
 
 function view_index() {
@@ -72,7 +74,6 @@ function view_advocate_details (advocate){
 	self.repository.data = data;
 	self.repository.page={};
 	self.repository.page.title = data.advocate[advocate].name;
-	self.model.
 	self.repository.entity = advocate;
 	this.view('advocate_details',data.advocate[advocate]);
 }
@@ -82,7 +83,7 @@ function view_service_details (service){
 	self.repository.page={};
 	self.repository.page.title = data.service[service].title;
 	self.repository.entity = service;
-	this.view('service_details');
+	this.view('service_details',data.service[service]);
 }
 function view_client_details (client){
 	var self = this;
@@ -91,4 +92,18 @@ function view_client_details (client){
 	self.repository.page.title = data.client.company;
 	self.repository.entity = client;
 	this.view('client_details');
+}
+function view_consult() {
+	var self = this;
+	self.repository.data = data;
+	self.repository.page={};
+	self.repository.page.title = "Consult";
+	self.view('consult',data.practice);
+}
+function view_contactus() {
+	var self = this;
+	self.repository.data = data;
+	self.repository.page={};
+	self.repository.page.title = "Contact Us";
+	self.view('contact');
 }

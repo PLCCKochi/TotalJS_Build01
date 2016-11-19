@@ -3,8 +3,8 @@
     <div class="container">
       <h1>@{repository.page.title}</h1>
       <ol class="breadcrumb">
-        <li><a href="../../">Home</a></li>
-        <li><a href="../">Advocates</a></li>
+        <li><a href="../../../">Home</a></li>
+        <li><a href="../../../advocates">Advocates</a></li>
         <li class="active">@{repository.page.title}</li>
       </ol>
     </div>
@@ -64,7 +64,7 @@
               <div class="cp-accordions">
                 <h3>Practice Areas</h3>
                 <div class="accordion-style-1">
-                  @{foreach area in repository.data.advocate[repository.entity].practice.areas}
+                  @{foreach area in model.practice.areas}
                   <div class="cp_aaccordion-row">
                     <div class="accordion_cp" id="section9">@{repository.data.practice.areas[area].title}<span><i class="fa fa-@{repository.data.practice.areas[area].icon}"></i></span> </div>
                     <div class="contain_cp_accor">
@@ -81,7 +81,7 @@
               <div class="cp-bar-addmissions">
                 <h3>Bar Addmissions</h3>
                 <ul>
-                  @{foreach admission in repository.data.advocate[repository.entity].practice.admissions}
+                  @{foreach admission in model.practice.admissions}
                     <li><a>@{repository.data.practice.admissions[admission]}</a></li>
                   @{end}
                 </ul>
@@ -98,37 +98,37 @@
                 <h3>Education &amp; Trainings</h3>
                 <ul>
                   @{foreach admission in model.education}
-                    <li> <strong class="year">@{model.education[admission].year}</strong>
+                    <li> <strong class="year">@{admission.year}</strong>
                       <div class="cp-text-box">
-                        <strong class="title">@{model.education[admission].univ}</strong><p>@{model.education[admission].remark}</p>
+                        <strong class="title">@{admission.univ}</strong><p>@{admission.remark}</p>
                       </div>
                     </li>
                   @{end}
                 </ul>
               </div>
             </div>
-            <!--
             <div class="col-md-4">
               <div class="cp-box">
                 <h3>Honors &amp; Awards</h3>
                 @{foreach award in model.awards}
-                <div class="honors-box">
-                  <div class="icon-box"><i class="fa fa-@{award.value.icon}"></i></div>
-                  <div class="cp-text-box"><strong class="title">@{award.value.remark}</strong>
-                    <p>@{award.value.remark}</p>
+                  <div class="honors-box">
+                    <div class="icon-box"><i class="fa fa-@{award.icon}"></i></div>
+                    <div class="cp-text-box"><strong class="title">@{award.name}</strong>
+                      <p>@{award.remark}</p>
+                    </div>
                   </div>
-                </div>
                 @{end}
+              </div>
             </div>
             <div class="col-md-4">
               <div class="cp-box">
                 <h3>Best Skills</h3>
                 @{foreach skill in model.skills}
-                <div class="cp-progress-box"> <strong class="title"><i class="fa fa-caret-right"></i>@{repository.practice.admissions[skill]}</strong>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="@{skill.value}" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"> 70% </div>
+                  <div class="cp-progress-box"> <strong class="title"><i class="fa fa-caret-right"></i>@{repository.data.practice.admissions[skill.key]}</strong>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="@{skill.value}" aria-valuemin="0" aria-valuemax="100" style="width: @{skill.value}%;"> @{skill.value}%</div>
+                    </div>
                   </div>
-                </div>
                 @{end}
               </div>
             </div>
@@ -149,7 +149,6 @@
           </ul>
         </div>
       </div>
-      -->
       <div class="contact-form-area">
         <div class="cp-author-box">
           <div class=" container">

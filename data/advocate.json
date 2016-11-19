@@ -23,26 +23,42 @@
 		"practice":{
 			"areas":[
 				"ina",
-				"dda"
+				"dda",
+				"mja",
+				"fsl",
+				"ppt",
+				"crp"
 			],
-			"addmissions":[
+			"admissions":[
 				"dda",
 				"ina",
-				"mja"
+				"mja",
+				"nhn",
+				"qwa"
 			]
 		},
 		"education":[
 			{
-				"univ":"Some Univ",
+				"univ":"Mahathma Gandhi Univ",
 				"year":"1987",
 				"remark":"Grad with Honors"
+			},
+			{
+				"univ":"Cochin University",
+				"year":"1990",
+				"remark":"Masters with Honors"
 			}
 		],
 		"awards":[
 			{
 				"icon":"trophy",
-				"name":"Kerala Lawyer's Meet 2012",
-				"remark":"Best Corporate Lawyer"
+				"name":"Best Corporate Lawyer",
+				"remark":"Kerala Lawyer's Meet 2012"
+			},
+			{
+				"icon":"shield",
+				"name":"Best Corporate Lawyer",
+				"remark":"Kerala Lawyer's Meet 2014"
 			}
 		],
 		"skills":{
@@ -52,7 +68,8 @@
 		},
 		"clients":[
 			"hdfc",
-			"federal"
+			"federal",
+			"sunpaul"
 		]
 	},
 	"natraj":{
@@ -79,24 +96,54 @@
 		"practice":{
 			"areas":[
 				"ina",
-				"dda"
+				"dda",
+				"mja",
+				"fsl",
+				"ppt",
+				"crp"
 			],
-			"addmissions":[
+			"admissions":[
 				"dda",
 				"ina",
-				"mja"
+				"mja",
+				"nhn",
+				"qwa"
 			]
 		},
 		"education":[
 			{
-				"univ":"",
-				"year":"",
-				"remark":""
+				"univ":"Mahathma Gandhi Univ",
+				"year":"1987",
+				"remark":"Grad with Honors"
+			},
+			{
+				"univ":"Cochin University",
+				"year":"1990",
+				"remark":"Masters with Honors"
 			}
 		],
+		"awards":[
+			{
+				"icon":"trophy",
+				"name":"Best Corporate Lawyer",
+				"remark":"Kerala Lawyer's Meet 2012"
+			},
+			{
+				"icon":"shield",
+				"name":"Best Corporate Lawyer",
+				"remark":"Kerala Lawyer's Meet 2014"
+			}
+		],
+		"skills":{
+			"dda":60,
+			"ina":40,
+			"mja":35
+		},
 		"clients":[
-			"federal",
-			"sunpaul"
+			"sunpaul",
+			"highline",
+			"bayshore",
+			"seawood"
 		]
 	}
 }
