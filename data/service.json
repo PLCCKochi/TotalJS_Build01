@@ -1,30 +1,37 @@
 {
 	"document-collection":{
-		"description":"Documents collecting from client site ",
-		"info":"service1.md"
+		"title":"Document Collection",
+		"info":"service1.md",
+		"image":"service (1).jpg"
 	},
 	"document-scrutiny":{
-		"description":"Scrutiny of documents for determining whether the title is good and alienable.",
-		"info":"service2.md"
+		"title":"Document Scrutiny",
+		"info":"service2.md",
+		"image":"service (2).jpg"
 	},
 	"draft-prepration":{
-		"description":"Preparation of Draft Agreement for sale /sale deed /and or any type deeds as required to the client satisfaction (Malayalam and English).",
-		"info":"service3.md"
+		"title":"Draft Preparation",
+		"info":"service3.md",
+		"image":"service (3).jpg"
 	},
 	"original-deed-prepration":{
-		"description":"Preparation off Original Deeds (Malayalam and English).",
-		"info":"service4.md"
+		"title":"Deed Preparation",
+		"info":"service4.md",
+		"image":"service (4).jpg"
 	},
 	"document-certificate-application-and-procurement":{
-		"description":"Applying/updating documents like, property tax, land tax, encumbrance certificate",
-		"info":"service5.md"
+		"title":"Document Procurement",
+		"info":"service5.md",
+		"image":"service (5).jpg"
 	},
 	"document-registration":{
-		"description":"Registration of documents at the respective Sub Registry offices (We have a good network and we are capable of doing registrations all across Kerala.",
-		"info":"service6.md"
+		"title":"Document Registeration",
+		"info":"service6.md",
+		"image":"service (1).jpg"
 	},
-	"ownership-title change":{
-		"description":"Change in ownership/Title of the property registered and Handing over the title deed after completing all statutory requirements.",
-		"info":"service7.md"
+	"ownership-title-change":{
+		"title":"Ownership Title Change",
+		"info":"service7.md",
+		"image":"service (2).jpg"
 	}
 }

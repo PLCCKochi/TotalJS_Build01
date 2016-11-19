@@ -1,0 +1,40 @@
+  <!--BANNER START-->
+  <div id="inner-banner">
+    <div class="container">
+      <h1>@{repository.page.title}</h1>
+      <ol class="breadcrumb">
+        <li><a href="../../../">Home</a></li>
+        <li class="active">@{repository.page.title}</li>
+      </ol>
+    </div>
+  </div>
+  <!--BANNER END--> 
+  
+  <!--MAIN START-->
+  <div id="main"> 
+    
+    <!--GALLERY SECTION START-->
+    <section class="cp-gallery padding-tb-60 cp-masonary greybg">
+      <div class="container" role="main">
+        <ul class="gallery" id="gallery-grid-1-masonrywrap">
+          @{foreach client in repository.data.client}
+            <li class="loop-entry">
+              <div class="cp-box">
+                <div class="frame">
+                  <img src="../../../images/clients/@{client.value.logo}" alt="img">
+                  <!--
+                  <div class="caption">
+                    <a href="../../../images/clients/@{client.value.logo}" class="zoom" data-rel="prettyPhoto"> <i class="fa fa-search-plus"></i>
+                    </a>
+                  </div>
+                  -->
+                </div>
+              </div>
+            </li>
+          @{end}
+        </ul>
+      </div>
+    </section>
+    <!--GALLERY SECTION END--> 
+  </div>
+  <!--MAIN END--> 

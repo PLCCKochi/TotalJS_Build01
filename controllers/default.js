@@ -13,8 +13,8 @@ exports.install = function() {
 	F.route('/services',view_service_index);
 	F.route('/services/{service}',view_service_details);
 	F.route('/clients',view_client_index);
-	F.route('/clients/{client}',view_client_details);
-	F.route('/clients/testimonials',view_testimonial_index);
+	//F.route('/clients/{client}',view_client_details);
+	F.route('/clients/testimonials',view_testimonial);
 	F.route('/consult',view_consult);
 	F.route('/contactus',view_contactus);
 };
@@ -45,7 +45,7 @@ function view_service_index() {
 	self.repository.data = data;
 	self.repository.page={};
 	self.repository.page.title = "Our Services";
-	self.view('service_index');
+	self.view('service_index',data.service);
 }
 function view_client_index() {
 	var self = this;
@@ -54,12 +54,12 @@ function view_client_index() {
 	self.repository.page.title = "Our Clients";
 	self.view('client_index');
 }
-function view_testimonial_index(){
+function view_testimonial(){
 	var self = this;
 	self.repository.data = data;
 	self.repository.page={};
 	self.repository.page.title = "Testimonials";
-	this.view('testimonial_index');
+	this.view('testimonial');
 }
 function view_blog_post (post){
 	var self = this;

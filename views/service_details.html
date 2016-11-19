@@ -1,0 +1,135 @@
+  <!--BANNER START-->
+  <div id="inner-banner">
+    <div class="container">
+      <h1>@{repository.page.title}</h1>
+      <ol class="breadcrumb">
+        <li><a href="../../../">Home</a></li>
+        <li><a href="../../../services">Services</a></li>
+        <li class="active">@{repository.page.title}</li>
+      </ol>
+    </div>
+  </div>
+  <!--BANNER END--> 
+  
+  <!--MAIN START-->
+  <div id="main"> 
+    
+    <!--BLOG SECTION START-->
+    <section class="cp-blog padding-top-60">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="cp-post-box">
+              <div class="frame cp-img-effect-1"><img src="../../../images/services/@{model.image}" alt="img"></div><br>
+              <h2>@{model.title}</h2>
+              <div class="cp-text-box">
+                @{!model.infoContent}
+                <div class="cp-share-post-row"> <strong class="title">Share Post:</strong>
+                  <ul>
+                    <li><a target="_blank" href="https://www.facebook.com/sharer.php?u=https://@{repository.data.server.host}/services/@{repository.entity}"><i class="fa fa-facebook"></i></a></li>
+                    <li><a target="_blank" href="https://twitter.com/intent/tweet?url=https://@{repository.data.server.host}/services/@{repository.entity}&text=@{repository.page.title}&via=kochilaw&hashtags=kochilaw,plcc"><i class="fa fa-twitter"></i></a></li>
+                    <li><a target="_blank" href="https://plus.google.com/share?url=https://@{repository.data.server.host}/services/@{repository.entity}"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/shareArticle?url=https://@{repository.data.server.host}/services/@{repository.entity}&title=@{repository.page.title}"><i class="fa fa-linkedin"></i></a></li>
+                    <!--<li><a href=""><i class="fa fa-dribbble"></i></a></li>-->
+                    <!--<li><a href=""><i class="fa fa-instagram"></i></a></li>-->
+                    <!--<li><a href=""><i class="fa fa-pinterest-p"></i></a></li>-->
+                  </ul>
+                </div>
+                <!--
+                <div class="cp-author-box">
+                  <h3>About Lawyer</h3>
+                  <div class="thumb"><a href="#"><img src="images/blog/author-img.jpg" alt="img"></a></div>
+                  <div class="text-box"> <strong class="name">John Patrick</strong>
+                    <p>Disconsolately gosh and this saucily hence and wildebeest some astride the excepting more tentative past to in nosy raffishly incongruously ouch yikes the more.</p>
+                  </div>
+                  <h3>Get Free Case Evaluation</h3>
+                  <form action="form-4.php" method="post">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <input type="text" name="name" placeholder="First Name *" required pattern="[a-zA-Z ]+">
+                      </div>
+                      <div class="col-md-4">
+                        <input type="text" name="name" placeholder="Last Name *" required pattern="[a-zA-Z ]+">
+                      </div>
+                      <div class="col-md-4">
+                        <input type="text" name="email" placeholder="Your Email *" required pattern="^[a-zA-Z0-9-\_.]+@[a-zA-Z0-9-\_.]+\.[a-zA-Z0-9.]{2,5}$">
+                      </div>
+                      <div class="col-md-12">
+                        <textarea name="comments" cols="10" rows="10" placeholder="Case Description *" required></textarea>
+                      </div>
+                      <div class="col-md-12">
+                        <input type="submit" value="Submit Case">
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                -->
+              </div>
+            </div>
+          </div>
+          <!--
+          <div class="col-md-3">
+            <aside>
+              <div class="cp-sidebar">
+                <div class="cp-sidebar-box">
+                  <h3>Search</h3>
+                  <form action="#">
+                    <input type="text" placeholder="Type your text here" required>
+                    <button><i class="fa fa-search"></i></button>
+                  </form>
+                </div>
+                <div class="cp-sidebar-box">
+                  <h3>Areas of Practice</h3>
+                  <div class="cp-practice-area">
+                    <ul>
+                      <li><a href="practice-area-detail.html"><i class="fa fa-bank"></i>Corporate</a></li>
+                      <li><a href="practice-area-detail.html"><i class="fa fa-medkit"></i>Personal Injury</a></li>
+                      <li><a href="practice-area-detail.html"><i class="fa fa-building-o"></i>Family Law Consultant</a></li>
+                      <li><a href="practice-area-detail.html"><i class="fa fa-car"></i>Serious Car Crash</a></li>
+                      <li><a href="practice-area-detail.html"><i class="fa fa-money"></i>Money Laundering</a></li>
+                      <li><a href="practice-area-detail.html"><i class="fa fa-truck"></i>Truck Accident</a></li>
+                      <li><a href="practice-area-detail.html"><i class="fa fa-intersex"></i>Sexual Abuse</a></li>
+                      <li><a href="practice-area-detail.html"><i class="fa fa-bug"></i>Drug Offences</a></li>
+                      <li><a href="practice-area-detail.html"><i class="fa fa-paper-plane-o"></i>Shoplifting</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="cp-sidebar-box">
+                  <h3>Meet Attorneys</h3>
+                  <div class="cp-attorneys-box">
+                    <div id="cp-attorneys-slider" class="owl-carousel owl-theme">
+                      <div class="item">
+                        <div class="holder">
+                          <div class="frame"><a href="attorney-profile.html"><img src="images/blog/attorneys-img-1.jpg" alt="img"></a></div>
+                          <strong class="name">Lee Stewart</strong> <b>Criminal Lawyer</b> </div>
+                      </div>
+                      <div class="item">
+                        <div class="holder">
+                          <div class="frame"><a href="attorney-profile.html"><img src="images/blog/attorneys-img-2.jpg" alt="img"></a></div>
+                          <strong class="name">Aleen Jhon</strong> <b>Lawyer</b> </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cp-sidebar-box">
+                  <h3>Legal News</h3>
+                  <div class="cp-legal-news">
+                    <ul>
+                      <li><a href="blog-detail.html">Consetetur sadipscing elit sed<i class="fa fa-angle-double-right"></i></a></li>
+                      <li><a href="blog-detail.html">Magna aliquyam erat, sed <i class="fa fa-angle-double-right"></i></a></li>
+                      <li><a href="blog-detail.html">Qui sequitur mutationem <i class="fa fa-angle-double-right"></i></a></li>
+                      <li><a href="blog-detail.html">Magna aliquyam erat, sed <i class="fa fa-angle-double-right"></i></a></li>
+                      <li><a href="blog-detail.html">Qui sequitur mutationem <i class="fa fa-angle-double-right"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+          -->
+        </div>
+      </div>
+    </section>
+    <!--BLOG SECTION END--> 
+  </div>
+  <!--MAIN END-->

@@ -18,6 +18,11 @@ for(post in data.blog){
 for(advocate in data.advocate){
 	data.advocate[advocate].proexpContent = converter.makeHtml(fs.readFileSync('./bulkcontent/proexp/' + data.advocate[advocate].proexp, 'utf8'));
 }
+for(service in data.service){
+	data.service[service].infoContent = converter.makeHtml(fs.readFileSync('./bulkcontent/service/' + data.service[service].info, 'utf8'));
+	data.service[service].infoExcerpt = converter.makeHtml(fs.readFileSync('./bulkcontent/service/' + data.service[service].info, 'utf8').substr(0,250));
+}
+
 fs.writeFileSync('./data.json',JSON.stringify(data,null,4));
 
 
