@@ -2,12 +2,12 @@
 	"banner":[
 		{
 			"text1":"Pothuval Legal and Corporate Consulting",
-			"text2":"Zero Error Document Services",
-			"image":"sign.jpg",
+			"text2":"Zero Error Documents",
+			"image":"backgrounds/law.jpg",
 			"buttons":[
 				{
 					"title":"Learn More",
-					"link":"services/document"
+					"link":"services/document-scrutiny"
 				},
 				{
 					"title":"Contact Us",
@@ -15,5 +15,84 @@
 				}
 			]
 		}
+	],
+	"threestep":[
+		{
+			"logo":"",
+			"title":"Well Planners",
+			"description":"Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod tempor incididunt ut pabore et dolore."
+		},
+		{
+			"logo":"",
+			"title":"Settlement",
+			"description":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+		},
+		{
+			"logo":"",
+			"title":"Fight for Justice",
+			"description":"Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur."
+		}
+	],
+	"fevents":[
+		{
+			"image":"random/inagural.1.jpg",
+			"details":"March 20th, 2013. Inaguration of FCI Office London"
+		},
+		{
+			"image":"random/inagural.2.jpg",
+			"details":"April 12th, 2015. Inaguration of Subway NY, NY"
+		}
+	],
+	"threestepb":[
+		{
+			"logo":"male",
+			"title":"We have best team of Advocates",
+			"description":"Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod tempor incididunt ut pabore et dolore."
+		},
+		{
+			"logo":"list-alt",
+			"title":"Best Case Strategy",
+			"description":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+		},
+		{
+			"logo":"map-o",
+			"title":"Review your Case Documents",
+			"description":"Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur."
+		}
+	],
+	"stats":[
+		{
+			"number":58,
+			"title":"Clients"
+		},
+		{
+			"number":192,
+			"title":"Properties"
+		},
+		{
+			"number":512,
+			"title":"Cases"
+		},
+		{
+			"number":6245,
+			"title":"Documents"
+		}
+	],
+	"posts":[
+		"firstpost",
+		"thisisit"
+	],
+	"clients":[
+		"hdfc",
+		"sunpaul",
+		"federal",
+		"bayshore"
+	],
+	"testimonials":[
+		"hdfc",
+		"subhiksha",
+		"terra",
+		"federal"
 	]
 }
+

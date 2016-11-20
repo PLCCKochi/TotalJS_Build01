@@ -5163,3 +5163,9 @@ code {
 .greybg{
 	background-color: #ddd;
 }
+
+#dotdotdotwrapper{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}

@@ -1,12 +1,18 @@
   <!--BANNER START-->
   <div id="cp-banner">
     <ul id="cp-home-banner">
-      <li> <img src="images/banner-img-1.jpg" alt="img">
-        <div class="caption"> <strong class="title">We are Lawyers <span>Pro</span></strong>
-          <h1>We Deliver Excellence</h1>
-          <div class="banner-btn-row"> <a href="#" class="btn-style-1">Learn More</a> <a href="contact-1.html" class="btn-style-1 btn-style-2">Contact Us</a> </div>
-        </div>
-      </li>
+      @{foreach banner in model.banner}
+        <li> <img src="../../../images/@{banner.image}" alt="img">
+          <div class="caption"> <strong class="title">@{banner.text1}<span><!--Pro--></span></strong>
+            <h1>@{banner.text2}</h1>
+            <div class="banner-btn-row">
+              <a href="@{banner.buttons[0].link}" class="btn-style-1">@{banner.buttons[0].title}</a>
+              <a href="@{banner.buttons[1].link}" class="btn-style-1 btn-style-2">@{banner.buttons[1].title}</a>
+            </div>
+          </div>
+        </li>
+      @{end}
+      <!--
       <li> <img src="images/banner-img-2.jpg" alt="img">
         <div class="caption"> <strong class="title">We are Lawyers <span>Pro</span></strong>
           <h1>We’re Voice of Justice!<br>
@@ -14,6 +20,7 @@
           <div class="banner-btn-row"> <a href="#" class="btn-style-1">Learn More</a> <a href="contact-1.html" class="btn-style-1 btn-style-2">Contact Us</a> </div>
         </div>
       </li>
+      -->
     </ul>
   </div>
   <!--BANNER END--> 
@@ -26,53 +33,31 @@
         <div class="row">
           <div class="col-md-6">
             <div class="cp-heading-1">
-              <h2>Welcome to <span>Lawyers Pro</span></h2>
-              <em>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</em> </div>
+              <h2>Welcome to <span>@{repository.data.company.name}</span></h2>
+              <em>@{repository.data.company.tagline}</em></div>
             <div class="cp-outer-box">
+              @{foreach step in model.threestep}
               <div class="cp-box">
-                <div class="icon-box"><img src="images/icon-img-1.jpg" alt="img"></div>
+                <div class="icon-box"><img src="../../../images/icon-img-@{index+1}.jpg" alt="img"></div>
                 <div class="cp-text-box">
-                  <h3><a href="#">Well Planners</a></h3>
-                  <p>Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod tempor incididunt ut pabore et dolore.</p>
+                  <h3><a href="#">@{step.title}</a></h3>
+                  <p>@{step.description}</p>
                 </div>
               </div>
-              <div class="cp-box">
-                <div class="icon-box"><img src="images/icon-img-2.jpg" alt="img"></div>
-                <div class="cp-text-box">
-                  <h3><a href="#">Settlement</a></h3>
-                  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                </div>
-              </div>
-              <div class="cp-box">
-                <div class="icon-box"><img src="images/icon-img-3.jpg" alt="img"></div>
-                <div class="cp-text-box">
-                  <h3><a href="#">Fight for Justice</a></h3>
-                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
-                </div>
-              </div>
+              @{end}
             </div>
           </div>
           <div class="col-md-6">
             <div class="welcome-slider">
               <ul id="cp-welcome-slider">
-                <li>
-                  <div class="frame"><img src="images/welcome-img-1.jpg" alt="img"></div>
-                  <div class="cp-text-box">
-                    <p>Etiam porta sem malesuada magna mollis euismod. Nullam quis risus eget urna mollis ornare vel eu leo. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum lorem ipsum dolor sit amet.</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="frame"><img src="images/welcome-img-1.jpg" alt="img"></div>
-                  <div class="cp-text-box">
-                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="frame"><img src="images/welcome-img-1.jpg" alt="img"></div>
-                  <div class="cp-text-box">
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
-                  </div>
-                </li>
+                @{foreach event in model.fevents}
+                  <li>
+                    <div class="frame"><img src="../../../images/@{event.image}" alt="img"></div>
+                    <div class="cp-text-box">
+                      <p>@{event.details}</p>
+                    </div>
+                  </li>
+                @{end}
               </ul>
             </div>
           </div>
@@ -90,60 +75,16 @@
       </div>
       <div class="cp-practice-slider">
         <div id="cp-practice" class="owl-carousel">
-          <div class="item">
-            <div class="cp-box"> <i class="fa fa-home"></i>
-              <h3><a href="practice-area-detail.html">Property Law</a></h3>
-              <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
+          @{foreach area in repository.data.practice.areas}
+            <div class="item">
+              <div class="cp-box"> <i class="fa fa-@{area.value.icon}"></i>
+                <h3><a href="#">@{area.value.title}</a></h3>
+                <div class="dddotwrapper">
+                  <p>@{area.value.decalExcerpt}</p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="item">
-            <div class="cp-box"> <i class="fa fa-shield"></i>
-              <h3><a href="practice-area-detail.html">Finance &amp; Security Law</a></h3>
-              <p>It is Nemo ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur. </p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="cp-box"> <i class="fa fa-bank"></i>
-              <h3><a href="practice-area-detail.html">Corporate</a></h3>
-              <p>Contrary to popular Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed. </p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="cp-box"> <i class="fa fa-male"></i>
-              <h3><a href="practice-area-detail.html">Criminal Defense</a></h3>
-              <p>There are many variations Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. </p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="cp-box"> <i class="fa fa-car"></i>
-              <h3><a href="practice-area-detail.html">Serious Car Crash</a></h3>
-              <p>ed ut perspiciatis unde omnisNemo enim ipsam voluptatem quia volup accusantium doloremque laudantium. </p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="cp-box"> <i class="fa fa-shield"></i>
-              <h3><a href="practice-area-detail.html">Finance &amp; Security Law</a></h3>
-              <p>It is a long established fact that aut odit aut fugit, sed quia consequunt of a looking at its layout. </p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="cp-box"> <i class="fa fa-bank"></i>
-              <h3><a href="practice-area-detail.html">Corporate</a></h3>
-              <p>Contrary to popular belief, Nemo enim ipsam voluptatem quia voluptas sit asp autclassical Latin from. </p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="cp-box"> <i class="fa fa-male"></i>
-              <h3><a href="practice-area-detail.html">Criminal Defense</a></h3>
-              <p>There are many variations of passages of Lorem aut odit aut fugit, sed quia consequ  injected humour. </p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="cp-box"> <i class="fa fa-car"></i>
-              <h3><a href="practice-area-detail.html">Serious Car Crash</a></h3>
-              <p>Led ut Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia laudantium. </p>
-            </div>
-          </div>
+          @{end}
         </div>
       </div>
     </section>
@@ -153,85 +94,32 @@
     <section class="cp-attorneys-team padding-tb-60">
       <div class="container">
         <div class="cp-heading-1">
-          <h2>Attorneys <span>Team</span></h2>
+          <h2>Our Advocates <span>Team</span></h2>
         </div>
         <div class="row">
-          <div class="col-md-3 col-sm-6">
-            <div class="cp-attorneys-style-1">
-              <div class="frame"> <a href="attorney-profile.html"><img src="images/attorneys/attorneys-img-1.jpg" alt="img"></a>
-                <div class="caption">
-                  <div class="holder">
-                    <ul>
-                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-                    <p>vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
-                    <a href="attorney-profile.html" class="btn-style-1">Read Profile</a> </div>
+          @{foreach advocate in repository.data.advocate}
+            <div class="col-md-3 col-sm-6">
+              <div class="cp-attorneys-style-1">
+                <div class="frame"> <a href="../../../advocates/@{advocate.key}"><img src="../../../images/advocates/@{advocate.value.photo}" alt="img"></a>
+                  <div class="caption">
+                    <div class="holder">
+                      <ul>
+                        <li><a href="https://twitter.com/@{advocate.value.social.tw}"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://facebook.com/@{advocate.value.social.fb}"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://linkedin.com/@{advocate.value.social.li}"><i class="fa fa-linkedin"></i></a></li>
+                      </ul>
+                      <p>
+                        @{advocate.value.caption}
+                      </p>
+                      <a href="../../../advocates/@{advocate.key}" class="btn-style-1">Read Profile</a> </div>
+                  </div>
                 </div>
+                <div class="cp-text-box">
+                  <h3><a href="../../../advocates/@{advocate.key}">@{advocate.value.name}</a></h3>
+                  <em>@{advocate.designation}</em></div>
               </div>
-              <div class="cp-text-box">
-                <h3><a href="attorney-profile.html">Edwin Wood</a></h3>
-                <em>Bar President / Criminal Lawyer</em> </div>
             </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="cp-attorneys-style-1">
-              <div class="frame"> <a href="attorney-profile.html"><img src="images/attorneys/attorneys-img-2.jpg" alt="img"></a>
-                <div class="caption">
-                  <div class="holder">
-                    <ul>
-                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure.</p>
-                    <a href="attorney-profile.html" class="btn-style-1">Read Profile</a> </div>
-                </div>
-              </div>
-              <div class="cp-text-box">
-                <h3><a href="attorney-profile.html">Brantly Dane Wlay</a></h3>
-                <em>Associate / Family Lawyer</em> </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="cp-attorneys-style-1">
-              <div class="frame"> <a href="attorney-profile.html"><img src="images/attorneys/attorneys-img-3.jpg" alt="img"></a>
-                <div class="caption">
-                  <div class="holder">
-                    <ul>
-                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
-                    <a href="attorney-profile.html" class="btn-style-1">Read Profile</a> </div>
-                </div>
-              </div>
-              <div class="cp-text-box">
-                <h3><a href="attorney-profile.html">Lee Stewart</a></h3>
-                <em>Criminal Lawyer</em> </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="cp-attorneys-style-1">
-              <div class="frame"> <a href="attorney-profile.html"><img src="images/attorneys/attorneys-img-4.jpg" alt="img"></a>
-                <div class="caption">
-                  <div class="holder">
-                    <ul>
-                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
-                    <a href="attorney-profile.html" class="btn-style-1">Read Profile</a> </div>
-                </div>
-              </div>
-              <div class="cp-text-box">
-                <h3><a href="attorney-profile.html">Jennifer Willinger</a></h3>
-                <em>Employment Lawyer</em> </div>
-            </div>
-          </div>
+          @{end}
         </div>
       </div>
     </section>
@@ -243,8 +131,14 @@
         <div class="row">
           <div class="col-md-6">
             <div class="left-box">
-              <div class="frame"> <img src="images/choose-lawyer-img.jpg" alt="img">
-                <div class="choose-logo-box"><a href="#"><img src="images/choose-logo.png" alt="img"></a></div>
+              <div class="frame">
+                <img src="images/choose-lawyer-img.jpg" alt="img">
+                <img src="images/choose-lawyer-img.jpg" alt="img">
+                <div class="choose-logo-box">
+                  <a href="#">
+                    <img src="images/choose-logo.png" alt="img">
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -252,30 +146,18 @@
             <div class="right-box">
               <div class="cp-text-box">
                 <div class="cp-heading-1">
-                  <h2>Why Choose <span>Lawyers Pro</span></h2>
-                  <em>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi
-                  accumsan ipsum velit. Nam nec tellus a odio tincidunt.</em> </div>
-                <div class="detail-box">
-                  <div class="icon-box"><i class="fa fa-male"></i></div>
-                  <div class="inner">
-                    <h3><a href="#">We have best Attorneys team</a></h3>
-                    <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae.</p>
-                  </div>
+                  <h2>Why Choose <span>@{repository.data.company.name}</span></h2>
+                  <em>@{repository.data.company.tagline}</em>
                 </div>
-                <div class="detail-box">
-                  <div class="icon-box"><i class="fa fa-list-alt"></i></div>
-                  <div class="inner">
-                    <h3><a href="#">Best Case Strategy</a></h3>
-                    <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas .</p>
+                @{foreach step in model.threestepb}
+                  <div class="detail-box">
+                    <div class="icon-box"><i class="fa fa-@{step.logo}"></i></div>
+                    <div class="inner">
+                      <h3><a href="#">@{step.title}</a></h3>
+                      <p>@{step.description}</p>
+                    </div>
                   </div>
-                </div>
-                <div class="detail-box">
-                  <div class="icon-box"><i class="fa fa-map-o"></i></div>
-                  <div class="inner">
-                    <h3><a href="#">Review your Case Documents</a></h3>
-                    <p>Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et.</p>
-                  </div>
-                </div>
+                @{end}
               </div>
             </div>
           </div>
@@ -289,18 +171,14 @@
       <div class="container">
         <div class="holder">
           <div class="row">
-            <div class="col-md-3 col-sm-6">
-              <div class="cp-box"> <strong class="title counter">4025</strong> <span>Successful Cases</span> </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="cp-box"> <strong class="title counter">3270</strong> <span>Trusted Clients</span> </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="cp-box"> <strong class="title counter">6349</strong> <span>Case Studies</span> </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="cp-box border-none"> <strong class="title counter">851</strong> <span>Registerd Case</span> </div>
-            </div>
+            @{foreach count in model.stats}
+              <div class="col-md-3 col-sm-6">
+                <div class="cp-box">
+                  <strong class="title counter">@{count.number}</strong>
+                  <span>@{count.title}</span>
+                </div>
+              </div>
+            @{end}
           </div>
         </div>
       </div>
@@ -314,56 +192,41 @@
           <div class="col-md-6">
             <div class="left-box">
               <h2>Legal <span>News</span></h2>
-              <div class="cp-box">
-                <div class="row">
-                  <div class="col-md-4 col-sm-6">
-                    <div class="frame cp-img-effect-1"><a href="blog-detail.html"><img src="images/news-img-1.jpg" alt="img"></a></div>
-                  </div>
-                  <div class="col-md-8 col-sm-6">
-                    <div class="cp-text-box">
-                      <h3><a href="blog-detail.html">In the world crime only is lose</a></h3>
-                      <a href="blog-detail.html" class="detail-text">23 November, 2015<span>//</span></a> <a href="blog-detail.html" class="detail-text">By: John Patrick</a>
-                      <p>Vero eos et accusamus et iusto odio dignissimos duci qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas.</p>
+              @{foreach post in model.posts}
+                <div class="cp-box">
+                  <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                      <div class="frame cp-img-effect-1"><a href="../../../blog/@{post}"><img src="../../../images/posts/@{repository.data.blog[post].image}" alt="img"></a></div>
+                    </div>
+                    <div class="col-md-8 col-sm-6">
+                      <div class="cp-text-box">
+                        <h3>
+                        <a href="../../../blog/@{post}">@{repository.data.blog[post].title}</a></h3>
+                        <a href="../../../blog/@{post}" class="detail-text">@{repository.data.blog[post].date}<span>//</span></a>
+                        <a href="../../../advocates/@{repository.data.blog[post].author}" class="detail-text">@{repository.data.blog[post].author}</a>
+                        <p>@{!repository.data.blog[post].postExcerptMDd}</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="cp-box border-none">
-                <div class="row">
-                  <div class="col-md-4 col-sm-6">
-                    <div class="frame cp-img-effect-1"><a href="blog-detail.html"><img src="images/news-img-2.jpg" alt="img"></a></div>
-                  </div>
-                  <div class="col-md-8 col-sm-6">
-                    <div class="cp-text-box">
-                      <h3><a href="blog-detail.html">We may brave human laws</a></h3>
-                      <a href="blog-detail.html" class="detail-text">06 November, 2015<span>//</span></a> <a href="blog-detail.html" class="detail-text">By: Roy Miller</a>
-                      <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              @{end}
             </div>
           </div>
           <div class="col-md-6">
             <div class="right-box">
               <h2>Happy <span>Clients</span></h2>
               <ul id="cp-client">
-                <li>
-                  <div class="client-col">
-                    <blockquote> <q>Because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself.</q>
-                      <div class="frame"><img src="images/client-img-1.jpg" alt="img"></div>
-                      <div class="text-box"> <strong class="name">John Patrick</strong> <em>Businessman</em> </div>
-                    </blockquote>
-                  </div>
-                </li>
-                <li>
-                  <div class="client-col">
-                    <blockquote> <q>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</q>
-                      <div class="frame"><img src="images/client-img-2.jpg" alt="img"></div>
-                      <div class="text-box"> <strong class="name">Roy Miller</strong> <em>Developer</em> </div>
-                    </blockquote>
-                  </div>
-                </li>
+                @{foreach client in model.testimonials}
+                  <li>
+                    <div class="client-col">
+                      <blockquote>
+                      <q>@{repository.data.client[client].testimonial}</q>
+                        <div class="frame"><img src="images/pocs/@{repository.data.client[client].pocpic}" alt="img"></div>
+                        <div class="text-box"> <strong class="name">@{repository.data.client[client].poc}</strong> <em>@{repository.data.client[client].post}, @{repository.data.client[client].company}</em> </div>
+                      </blockquote>
+                    </div>
+                  </li>
+                @{end}
               </ul>
             </div>
           </div>
@@ -377,8 +240,7 @@
       <div class="container">
         <div class="cp-heading-1">
           <h2>Free <span>Consultation</span></h2>
-          <em>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi
-          accumsan ipsum velit. Nam nec tellus a odio tincidunt.</em> </div>
+          <em>Everything good starts over a cup of coffee. Drop a line here and we'll fix a time for coffee.</em> </div>
         <form action="form-2.php" method="post">
           <div class="row">
             <div class="col-md-3">
@@ -417,11 +279,9 @@
       <div class="container">
         <h2>Cilents <span>We Deal</span></h2>
         <ul>
-          <li><a href="#"><img src="images/client/client-img-1.png" alt="img"></a></li>
-          <li><a href="#"><img src="images/client/client-img-2.png" alt="img"></a></li>
-          <li><a href="#"><img src="images/client/client-img-3.png" alt="img"></a></li>
-          <li><a href="#"><img src="images/client/client-img-4.png" alt="img"></a></li>
-          <li><a href="#"><img src="images/client/client-img-5.png" alt="img"></a></li>
+          @{foreach client in model.clients}
+            <li><a href="#"><img class="smallp" src="../../../images/clients/@{repository.data.client[client].logo}" alt="img"></a></li>
+          @{end}
         </ul>
       </div>
     </section>

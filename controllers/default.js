@@ -24,7 +24,7 @@ function view_index() {
 	self.repository.data = data;
 	self.repository.page={};
 	self.repository.page.title = "Home";
-	self.view('index');
+	self.view('index',data.home);
 }
 function view_blog_index() {
 	var self = this;

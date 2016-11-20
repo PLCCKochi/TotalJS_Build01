@@ -4,12 +4,13 @@
   "description": "[![Support](https://www.totaljs.com/img/button-support.png)](https://www.totaljs.com/support/) [![Donate](https://www.totaljs.com/img/button-donate.png)](https://www.totaljs.com/#make-a-donation)",
   "main": "release.js",
   "dependencies": {
-    "showdown": "^1.5.0"
+    "showdown": "^1.5.0",
+    "total.js": "^2.3.0-10"
   },
   "devDependencies": {},
   "scripts": {
-    "test":"nodemon release.js --watch controllers\\default.js --watch views\\* --watch public\\css\\ --watch public\\js\\ --watch data\\ --ignore data.json",
-    "start":"node release.js"
+    "test": "nodemon release.js --watch controllers\\default.js --watch views\\* --watch public\\css\\ --watch public\\js\\ --watch data\\ --ignore data.json",
+    "start": "node release.js"
   },
   "repository": {
     "type": "git",
