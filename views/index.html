@@ -2,7 +2,7 @@
   <div id="cp-banner">
     <ul id="cp-home-banner">
       @{foreach banner in model.banner}
-        <li> <img src="../../../images/@{banner.image}" alt="img">
+        <li> <img src="https://public.kochilaw.tk/images/@{banner.image}" alt="img">
           <div class="caption"> <strong class="title">@{banner.text1}<span><!--Pro--></span></strong>
             <h1>@{banner.text2}</h1>
             <div class="banner-btn-row">
@@ -38,7 +38,7 @@
             <div class="cp-outer-box">
               @{foreach step in model.threestep}
               <div class="cp-box">
-                <div class="icon-box"><img src="../../../images/icon-img-@{index+1}.jpg" alt="img"></div>
+                <div class="icon-box"><img src="https://public.kochilaw.tk/images/icon-img-@{index+1}.jpg" alt="img"></div>
                 <div class="cp-text-box">
                   <h3><a href="#">@{step.title}</a></h3>
                   <p>@{step.description}</p>
@@ -52,7 +52,7 @@
               <ul id="cp-welcome-slider">
                 @{foreach event in model.fevents}
                   <li>
-                    <div class="frame"><img src="../../../images/@{event.image}" alt="img"></div>
+                    <div class="frame"><img src="https://public.kochilaw.tk/images/@{event.image}" alt="img"></div>
                     <div class="cp-text-box">
                       <p>@{event.details}</p>
                     </div>
@@ -100,7 +100,7 @@
           @{foreach advocate in repository.data.advocate}
             <div class="col-md-3 col-sm-6">
               <div class="cp-attorneys-style-1">
-                <div class="frame"> <a href="../../../advocates/@{advocate.key}"><img src="../../../images/advocates/@{advocate.value.photo}" alt="img"></a>
+                <div class="frame"> <a href="../../../advocates/@{advocate.key}"><img src="https://public.kochilaw.tk/images/advocates/@{advocate.value.photo}" alt="img"></a>
                   <div class="caption">
                     <div class="holder">
                       <ul>
@@ -196,7 +196,7 @@
                 <div class="cp-box">
                   <div class="row">
                     <div class="col-md-4 col-sm-6">
-                      <div class="frame cp-img-effect-1"><a href="../../../blog/@{post}"><img src="../../../images/posts/@{repository.data.blog[post].image}" alt="img"></a></div>
+                      <div class="frame cp-img-effect-1"><a href="../../../blog/@{post}"><img src="https://public.kochilaw.tk/images/posts/@{repository.data.blog[post].image}" alt="img"></a></div>
                     </div>
                     <div class="col-md-8 col-sm-6">
                       <div class="cp-text-box">
@@ -280,7 +280,7 @@
         <h2>Cilents <span>We Deal</span></h2>
         <ul>
           @{foreach client in model.clients}
-            <li><a href="#"><img class="smallp" src="../../../images/clients/@{repository.data.client[client].logo}" alt="img"></a></li>
+            <li><a href="#"><img class="smallp" src="https://public.kochilaw.tk/images/clients/@{repository.data.client[client].logo}" alt="img"></a></li>
           @{end}
         </ul>
       </div>

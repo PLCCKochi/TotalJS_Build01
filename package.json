@@ -5,11 +5,12 @@
   "main": "release.js",
   "dependencies": {
     "showdown": "^1.5.0",
+    "sync-request": "^3.0.1",
     "total.js": "^2.3.0-10"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "nodemon release.js --watch controllers\\default.js --watch views\\* --watch public\\css\\ --watch public\\js\\ --watch data\\ --ignore data.json",
+    "test": "nodemon release.js --watch controllers\\default.js --watch views\\* ",
     "start": "node release.js"
   },
   "repository": {

@@ -1,8 +1,13 @@
+var request = require('sync-request');
 var fs = require('fs');
 var showdown  = require('showdown'),
 	converter = new showdown.Converter();
 
-var data = require('../data.json');
+var url = "https://public.kochilaw.tk/";
+
+var data = {};
+
+loadContent();
 
 exports.install = function() {
 	F.route('/', view_index);
@@ -17,6 +22,7 @@ exports.install = function() {
 	F.route('/clients/testimonials',view_testimonial);
 	F.route('/consult',view_consult);
 	F.route('/contactus',view_contactus);
+	F.route('/athul/reload',reload);
 };
 
 function view_index() {
@@ -106,4 +112,42 @@ function view_contactus() {
 	self.repository.page={};
 	self.repository.page.title = "Contact Us";
 	self.view('contact');
+}
+function reload(){
+	loadContent();
+	var self = this;
+	self.repository.data = data;
+	self.repository.page={};
+	self.repository.page.title = "LoadContent";
+	self.view('contact');
+}
+//LoadContent
+function loadContent(){
+	var dataindex =  JSON.parse(request('GET', url + "data/index.json").getBody('utf8'));
+	//console.log(dataindex);
+	for(var i=0; i < dataindex.length; i++){
+		console.log(url+'data/'+ dataindex[i] +".json");
+		data[dataindex[i]] = JSON.parse(request('GET', url+'data/'+dataindex[i]+".json").getBody('utf8'));
+	}
+	fs.writeFileSync('data.json1',JSON.stringify(data));
+	for(post in data.blog){
+		
+		data.blog[post].postContentOrd = request('GET', url + 'bulkcontent/blog/' + data.blog[post].post ).getBody('utf8');
+		data.blog[post].postExcerptOrd = data.blog[post].postContentOrd.substr(0,250);
+		data.blog[post].postExtractOrd = data.blog[post].postContentOrd.substr(0,750);
+		data.blog[post].postContentMDd = converter.makeHtml(data.blog[post].postContentOrd);
+		data.blog[post].postExcerptMDd = converter.makeHtml(data.blog[post].postExcerptOrd);
+		data.blog[post].postExtractMDd = converter.makeHtml(data.blog[post].postExtractOrd);
+	}
+	for(advocate in data.advocate){
+		data.advocate[advocate].proexpContent = converter.makeHtml(request('GET', url + 'bulkcontent/proexp/' + data.advocate[advocate].proexp ).getBody('utf8'));
+	}
+	for(service in data.service){
+		var body = request('GET', url + 'bulkcontent/service/' + data.service[service].info ).getBody('utf8');
+		data.service[service].infoContent = converter.makeHtml(body);
+		data.service[service].infoExcerpt = converter.makeHtml(body).substr(0,250);
+	}
+	for(area in data.practice.areas){
+		data.practice.areas[area].decalExcerpt = data.practice.areas[area].decal.substr(0,160)+'...';
+	}
 }

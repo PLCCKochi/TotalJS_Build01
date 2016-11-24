@@ -1,32 +1,7 @@
-var fs = require('fs');
-var showdown  = require('showdown'),
-	converter = new showdown.Converter();
-
-var data = {};
-var items = fs.readdirSync('./data/')
-for (var i=0; i<items.length; i++) {
-	data[items[i].substr(0,items[i].length-5)] = require('./data/'+items[i]);
-}
-for(post in data.blog){
-	data.blog[post].postContentOrd = fs.readFileSync('./bulkcontent/blog/' + data.blog[post].post,'utf8');
-	data.blog[post].postExcerptOrd = data.blog[post].postContentOrd.substr(0,250);
-	data.blog[post].postExtractOrd = data.blog[post].postContentOrd.substr(0,750);
-	data.blog[post].postContentMDd = converter.makeHtml(data.blog[post].postContentOrd);
-	data.blog[post].postExcerptMDd = converter.makeHtml(data.blog[post].postExcerptOrd);
-	data.blog[post].postExtractMDd = converter.makeHtml(data.blog[post].postExtractOrd);
-}
-for(advocate in data.advocate){
-	data.advocate[advocate].proexpContent = converter.makeHtml(fs.readFileSync('./bulkcontent/proexp/' + data.advocate[advocate].proexp, 'utf8'));
-}
-for(service in data.service){
-	data.service[service].infoContent = converter.makeHtml(fs.readFileSync('./bulkcontent/service/' + data.service[service].info, 'utf8'));
-	data.service[service].infoExcerpt = converter.makeHtml(fs.readFileSync('./bulkcontent/service/' + data.service[service].info, 'utf8').substr(0,250));
-}
-for(area in data.practice.areas){
-	data.practice.areas[area].decalExcerpt = data.practice.areas[area].decal.substr(0,160)+'...';
-}
-fs.writeFileSync('./data.json',JSON.stringify(data,null,4));
-
+//var fs = require('fs');
+//var showdown  = require('showdown'),
+//	converter = new showdown.Converter();
+//fs.writeFileSync('./data.json',JSON.stringify(data,null,4));
 
 var port = process.env.PORT || 9000;
 var fs = require('fs');
