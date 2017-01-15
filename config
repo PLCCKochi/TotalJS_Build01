@@ -1,11 +1,17 @@
-name                            : Kochi Law
-author                          : Wayne Enterprises Pvt Ltd
-version                         : 1.0.0
-secret                          : kjshkjdhfgkjshjhsdfgjdhgkjfdgkjdfhkjgbdfjgbdj
+name 	: Kochi Law
+author 	: Wayne Enterprises Pvt Ltd
+version : 1.0.0
+secret 	: kjshkjdhfgkjshjhsdfgjdhgkjfdgkjdfhkjgbdfjgbdj
 
 // Mail settings
-mail.smtp                       : smtp.yourwebsite.com
-mail.smtp.options               : {"secure":false,"port":25,"user":"","password":"","timeout":10000}
-mail.address.from               : your@yourwebsite.com
-mail.address.reply              : your@yourwebsite.com
-mail.address.bcc                :
+mail.smtp 			: smtp.yourwebsite.com
+mail.smtp.options 	: {"secure":false,"port":25,"user":"","password":"","timeout":10000}
+mail.address.from 	: your@yourwebsite.com
+mail.address.reply 	: your@yourwebsite.com
+mail.address.bcc 	:
+
+//secrets
+oauth2.google.key 		: 347176808031-7u3jr123vdjl4cguapbd16rpqj7bqufi.apps.googleusercontent.com
+oauth2.google.secret 	: XbfyS1KzXLDKwnZSoCypy5mX
+oauth2.facebook.key 	: 1786329148251221
+oauth2.facebook.secret 	: f227a005e7b053736fd307b36f9c5dab

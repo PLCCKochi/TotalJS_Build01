@@ -3,13 +3,15 @@ var fs = require('fs');
 var showdown  = require('showdown'),
 	converter = new showdown.Converter();
 
-var url = "https://public.kochilaw.tk/";
+//var url = "https://public.kochilaw.tk/";
+var url = "http://127.0.0.1:81/public/"
 
 var data = {};
 
 loadContent();
 
 exports.install = function() {
+    F.route('/login',view_login);
 	F.route('/', view_index);
 	F.route('/blog',view_blog_index);
 	F.route('/blog/{post}',view_blog_post)
@@ -32,6 +34,14 @@ function view_index() {
 	self.repository.page.title = "Home";
 	self.view('index',data.home);
 }
+function view_login(){
+	var self = this;
+	self.repository.data = data;
+	self.repository.page={};
+	self.repository.page.title = "Login to your Account";
+	self.view('login');
+}
+
 function view_blog_index() {
 	var self = this;
 	self.repository.data = data;
@@ -123,6 +133,9 @@ function reload(){
 }
 //LoadContent
 function loadContent(){
+
+	
+
 	var dataindex =  JSON.parse(request('GET', url + "data/index.json").getBody('utf8'));
 	//console.log(dataindex);
 	for(var i=0; i < dataindex.length; i++){

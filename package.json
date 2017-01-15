@@ -4,8 +4,11 @@
   "description": "[![Support](https://www.totaljs.com/img/button-support.png)](https://www.totaljs.com/support/) [![Donate](https://www.totaljs.com/img/button-donate.png)](https://www.totaljs.com/#make-a-donation)",
   "main": "release.js",
   "dependencies": {
+    "mysql": "^2.12.0",
     "showdown": "^1.5.0",
+    "sqlagent": "^9.4.0",
     "sync-request": "^3.0.1",
+    "thirty-two": "^1.0.2",
     "total.js": "^2.3.0-10"
   },
   "devDependencies": {},
